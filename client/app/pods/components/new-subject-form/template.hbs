@@ -1,0 +1,24 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if subjects.name "has-error"}}">
+            <label for="name" class="col-lg-2 control-label">Név</label>
+            <div class="col-lg-10">
+                <input class="form-control" id="name" name="name" placeholder="pl. Analízis 3" type="text" value="{{data.name}}">
+                <span class="help-block">{{subjects.name}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if subjects.credit "has-error"}}">
+            <label for="credit" class="col-lg-2 control-label">Kredit</label>
+            <div class="col-lg-10">
+                <input class="form-control" rows="3" id="credit" name="credit" value="{{data.credit}}">
+                <span class="help-block">{{subjects.credit}}</span>
+            </div>
+        </div>
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Mégse</button>
+                <button {{action "submit"}} class="btn btn-primary">Küld</button>
+            </div>
+        </div>
+    </fieldset>
+</form>        

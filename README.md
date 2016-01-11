@@ -3,7 +3,7 @@
 A feladat egy alkalmazás létrehozása, melyben a felhasználók bejelentkezés után kezelhetik tárgyaikat. A legelső bejelentkezés előtt a felhasználóknak regisztrálniuk kell. A felhasználók belépés után fel tudják venni a tárgyaikat. A felvett tárgyakat meg tudják tekinteni, szerkeszthetik és törölhetik a listából.
 
 
-![Eset diagramm](docs/img/eset.png)
+![Eset diagramm](docs/img/eset_n.png)
 
 ##Tervezés
 ###Adatmodell
@@ -17,7 +17,7 @@ A **subject** tábla tartalmazza a tárgyak adatait:
   - Tárgy neve
   - Kredit
   
-![Eset diagramm](docs/img/tabla.png)
+![Diagramm](docs/img/tabla_n.png)
 
 ###Oldaltérkép
 * Publikus:
@@ -33,7 +33,7 @@ A **subject** tábla tartalmazza a tárgyak adatait:
 		  + tárgy szerkesztése
 		  + tárgy megtekintése
 
-![Oldalvázlat](docs/img/rajz.png)
+![Oldalvázlat](docs/img/vazlat.jpg)
 
 ##Végpontok
 A következő lista tartalmazza az egyes végpontokon elérhető funkciókat
@@ -90,5 +90,3 @@ Ha a *./node_modules/.bin/* mappában vagyunk, akkor
 
 - Elindításhoz a következő parancsot használhatjuk:
 > ember serve
-
-A program elérhető a http://targyfelvetel.herokuapp.com címen

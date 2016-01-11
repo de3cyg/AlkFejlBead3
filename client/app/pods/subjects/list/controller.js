@@ -1,5 +1,7 @@
 import Ember from 'ember';
 
+
+
 export default Ember.Controller.extend({
     actions: {
         newSubject(formData) {
@@ -9,14 +11,15 @@ export default Ember.Controller.extend({
                     {
                         //date: Date.now().toLocaleString(),
                         name: 'Anal3',
-                        credit: 3
+                        credit: 3,
+                        user:'asdsd'
                     }, 
                     formData
                 )
             );
             subject.save();
             $('.modal').modal('hide');
-            //this.transitionToRoute('errors.list');
-        }
+            //this.transitionToRoute('subjects.list');
+        },
     }
 });

@@ -1,0 +1,39 @@
+<form class="form-horizontal" method="post">
+    <fieldset>
+        <div class="form-group {{if users.firstName "has-error"}}">
+            <label for="firstName" class="col-lg-2 control-label">Vezetéknév</label>
+            <div class="col-lg-10">
+                <input class="form-control" type="text" id="firstName" name="firstName" value="{{data.firstName}}">
+                <span class="help-block">{{users.firstName}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if users.lastName "has-error"}}">
+            <label for="lastName" class="col-lg-2 control-label">Keresztnév</label>
+            <div class="col-lg-10">
+                <input class="form-control" type="text" id="lastName" name="lastName" value="{{data.lastName}}">
+                 <span class="help-block">{{users.lastName}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if users.neptun "has-error"}}">
+            <label for="neptun" class="col-lg-2 control-label">Neptun-kód</label>
+            <div class="col-lg-10">
+                <input class="form-control" type="text" id="neptun" name="neptun" value="{{data.neptun}}">
+                 <span class="help-block">{{users.neptun}}</span>
+            </div>
+        </div>
+        <div class="form-group {{if users.password "has-error"}}">
+            <label for="password" class="col-lg-2 control-label" value="{{data.password}}">Jelszó</label>
+            <div class="col-lg-10">
+                <input class="form-control" type="password" id="password" name="password">
+                 <span class="help-block">{{users.password}}</span>
+            </div>
+        </div>
+        
+        <div class="form-group">
+            <div class="col-lg-10 col-lg-offset-2">
+                <button type="reset" class="btn btn-default">Alaphelyzet</button>
+                <button {{action 'submit'}} class="btn btn-primary">Küldés</button>
+            </div>
+        </div>
+    </fieldset>
+</form>

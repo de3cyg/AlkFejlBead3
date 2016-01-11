@@ -3,9 +3,10 @@ import DS from 'ember-data';
 const SubjectModel = DS.Model.extend({
   name: DS.attr('string'),
   credit: DS.attr('number'),
+  user:   DS.belongsTo('user', {async:true})
 });
 
-SubjectModel.reopenClass({
+/*SubjectModel.reopenClass({
     FIXTURES: [
         {
             id: 1,
@@ -13,6 +14,6 @@ SubjectModel.reopenClass({
             credit: '2',
         }
     ]
-});
+});*/
 
 export default SubjectModel;

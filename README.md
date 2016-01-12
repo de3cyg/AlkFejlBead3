@@ -90,3 +90,5 @@ Ha a *./node_modules/.bin/* mappában vagyunk, akkor
 
 - Elindításhoz a következő parancsot használhatjuk:
 > ember serve
+
+A program elérhető a http://alk-fejl-bead-3-de3cyg.c9users.io/ címen.
